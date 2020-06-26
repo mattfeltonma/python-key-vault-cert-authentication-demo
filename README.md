@@ -1,4 +1,4 @@
-# AWS Services Last Accessed Analysis
+# Azure Key Vault and client certificates demo in Python
 This solution demonstrates how a client certificate stored in [Azure's Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/) can be retrieved using an [Azure Managed Identity](https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview) and then be used to query the Azure Resource Manager API.
 
 It is written in Python 3 and uses the [Microsft Azure Python SDKs](https://docs.microsoft.com/en-us/azure/developer/python/azure-sdk-overview) and the [Microsoft Authentication Library (MSAL).](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-overview)
