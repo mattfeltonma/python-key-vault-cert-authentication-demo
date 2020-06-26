@@ -71,7 +71,7 @@ def main():
 
         # Create an X509 object and calculate the thumbprint
         cert = load_pem_x509_certificate(data=bytes(public_certificate, 'UTF-8'),backend=default_backend())
-        thumbprint = (cert.fingerprint(hashes.SHA1()).hex()
+        thumbprint = (cert.fingerprint(hashes.SHA1()).hex())
 
         # Obtain an access token
         mytoken = get_sp_access_token(
@@ -86,6 +86,9 @@ def main():
         )
 
         print(mytoken)
+    
+    except Exception:
+        logging.error('Execution error: ', exc_info=True)
 
 if __name__ == "__main__":
     main()
